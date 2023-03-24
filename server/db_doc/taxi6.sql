@@ -175,3 +175,7 @@ UPDATE cars SET
 
 select t1.name, t2.name from cars t1, cars t2
 ORDER by t1.name;
+
+
+SELECT * FROM cars;
+SELECT * FROM trips;
